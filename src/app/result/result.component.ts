@@ -13,7 +13,7 @@ export class ResultComponent implements OnInit {
   arabNum: number;
   result = 'pending';
   ngOnInit() {
-    this.arabNum = this.activatedRoute.snapshot.params.id;
+    this.arabNum = Number(this.activatedRoute.snapshot.params.id);
     this.result = this.romanService.getRoman(this.arabNum);
   }
 }

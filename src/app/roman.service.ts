@@ -42,8 +42,7 @@ export class RomanService {
         1
       ];
       // Above 3999 Roman Needs special characters //
-      if (natNo <= 0 || natNo > 3999 || typeof natNo === 'string' || !Number.isInteger(natNo) ) {
-        // expect(response).toEqual('Value must be aa natural number greater than 0 and less than 4000')
+      if (natNo <= 0 || natNo > 3999 || !Number.isInteger(natNo) ) {
         return 'Value must be a natural number greater than 0 and less than 4000';
       }
       let result: string;
