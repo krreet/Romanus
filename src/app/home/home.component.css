@@ -1,0 +1,109 @@
+* {
+    outline: none;
+    border: none;
+    padding: 0;
+}
+
+.search-form {
+    position: relative;
+    margin: 20px auto 0;
+    width: 17%;
+}
+
+.active:before {
+    transform: scale(1);
+    transition-delay: 0.3s;
+    animation: 0.6s cubic-bezier(.87, -.41, .19, 1.44) 0.5s infinite forwards focus;
+}
+
+input {
+    border-radius: 40px;
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    transition: all 0.5s cubic-bezier(.87, -.41, .19, 1.44);
+    font-size: 36px;
+    color: rgb(71, 136, 135);
+}
+
+.active input {
+    width: 342px;
+    padding-left: 25px;
+    border-radius: 36px;
+}
+
+button {
+    background: rgba(255, 255, 255, 1);
+    position: absolute;
+    height: 100%;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    transition: all 0.5s cubic-bezier(.87, -.41, .19, 1.44);
+    cursor: pointer;
+}
+
+button:after {
+    content: ' ';
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    margin: 0 auto;
+    background: #369;
+    border-radius: 50%;
+}
+
+button:before {
+    content: ' ';
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 0;
+    right: 0;
+    top: 28px;
+    transform: scale(0);
+    transform-origin: left top;
+    margin: 0 auto;
+    background: white;
+    border-radius: 50%;
+    z-index: 1;
+    transition: all 0.8s ease;
+}
+
+.active button {
+    transform: translateX(260px);
+}
+
+.active button:before {
+    transform: scale(1);
+}
+
+.focus:before {
+    transform: scale(0);
+    animation: none;
+}
+
+@keyframes focus {
+    0 {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.convert-activate {
+    left: 30%;
+    position: absolute;
+    font-size: 2rem;
+    color: #369;
+    width: fit-content;
+    z-index: -1;
+    top: 2.5vh;
+}
