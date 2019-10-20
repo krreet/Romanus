@@ -18,9 +18,7 @@ export class HomeComponent implements OnInit {
   interval: any;
 
 
-  clickEvent(e) {
-
-    // this.router.navigateByUrl('/')
+  clickEvent() {
     if (this.inputVal <= 3999 && this.inputVal > 0 && Number.isInteger(this.inputVal)) {
       this.router.navigateByUrl('result' + '/' + this.inputVal);
 
