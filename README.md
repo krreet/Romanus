@@ -1,6 +1,7 @@
-[![codecov](https://codecov.io/gh/krreet/Romanus/branch/master/graph/badge.svg)](https://codecov.io/gh/krreet/Romanus)
-
 # Romanus
+
+[![codecov](https://codecov.io/gh/krreet/Romanus/branch/master/graph/badge.svg)](https://codecov.io/gh/krreet/Romanus)
+[![Dependencies](https://david-dm.org/krreet/Romanus.svg)](https://david-dm.org/krreet/Romanus)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.9.
 
