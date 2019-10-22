@@ -1,7 +1,7 @@
 <div class="search-form" [ngClass]="{'active': active , 'focus' : focus}" >
     <form>
         <input placeholder="Enter Number" type="number" [(ngModel)]="inputVal"
-            onkeydown="return event.keyCode !== 69"  name="first">
+            onkeydown="return event.keyCode !== 69 && event.keyCode !== 190 && event.keyCode !== 189"  name="first">
         <button id="main-btn" (click)="clickEvent()"></button>
         <div class="convert-activate">
             Click To Activate
