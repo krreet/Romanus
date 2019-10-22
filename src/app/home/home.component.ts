@@ -24,7 +24,7 @@ export class HomeComponent implements OnInit {
 
     } else {
 
-      if (this.active && (typeof this.inputVal !== 'undefined' && this.inputVal !== null)) {
+      if (this.active && typeof this.inputVal !== 'undefined' && this.inputVal !== null) {
         Swal.fire({
           title: 'This System expects a natural number in the range of 1 to 3999',
           html:
