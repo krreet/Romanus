@@ -6,7 +6,7 @@ import { Injectable } from '@angular/core';
 export class RomanService {
 
   constructor() { }
-
+// This function coverts arabic number to roman nummber
   getRoman(natNo) {
 
       // Roman Number characters
@@ -25,7 +25,7 @@ export class RomanService {
         'IV',
         'I'
       ];
-      // Arabic number
+      // Arabic numbers
       const arabNo: Array<number> = [
         1000,
         900,

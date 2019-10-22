@@ -10,8 +10,10 @@ import { RomanService } from '../roman.service';
 export class ResultComponent implements OnInit {
 
   constructor(private activatedRoute: ActivatedRoute, private romanService: RomanService) { }
+
   arabNum: number;
   result = 'pending';
+
   ngOnInit() {
     this.arabNum = Number(this.activatedRoute.snapshot.params.id);
     this.result = this.romanService.getRoman(this.arabNum);

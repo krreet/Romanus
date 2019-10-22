@@ -9,11 +9,11 @@ describe('ResultComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ResultComponent ],
+      declarations: [ResultComponent],
       providers: [RomanService],
-      imports: [ RouterTestingModule]
+      imports: [RouterTestingModule]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {
