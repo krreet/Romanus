@@ -17,15 +17,14 @@ export class HomeComponent implements OnInit {
   inputVal: number;
   interval: any;
 
-// This method is a click listener on the button which either converts an input to roman no or shows an error
+  // This method is a click listener on the button which either converts an input to roman no or shows an error
   clickEvent() {
     if (this.inputVal <= 3999 && this.inputVal > 0 && Number.isInteger(this.inputVal)) {
       this.router.navigateByUrl('result' + '/' + this.inputVal);
 
     } else {
 
-      if (this.active && typeof this.inputVal !== 'undefined') {
-
+      if (this.active && (typeof this.inputVal !== 'undefined' && this.inputVal !== null)) {
         Swal.fire({
           title: 'This System expects a natural number in the range of 1 to 3999',
           html:
